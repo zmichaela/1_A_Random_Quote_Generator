@@ -13,6 +13,7 @@ sources - https://www.bustle.com/articles/121359-25-of-the-best-book-quotes-of-a
 shortlist.com/news/the-40-most-powerful-literary-quotes
 ***/
 
+
 // I created an array with 7 objects (quotes)
 let quotes = [
   {
@@ -61,11 +62,17 @@ let quotes = [
 
 /***
  * `getRandomQuote` function
+bracket notation on the quotes array
 ***/
 
 
-
+function getRandomQuote () {
+let randomNumber = Math.floor(Math.random() * quotes.length) + 1; //get a random number
+return quotes[randomNumber];
 }
+
+console.log(randomNumber);
+
 
 
 /***
@@ -73,10 +80,9 @@ let quotes = [
 ***/
 
 
-
 /***
  * click event listener for the print quote button
  * DO NOT CHANGE THE CODE BELOW!!
 ***/
 
-document.getElementById('load-quote').addEventListener("click", printQuote, false);
+//document.getElementById('load-quote').addEventListener("click", printQuote, false);
