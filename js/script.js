@@ -48,6 +48,10 @@ let quotes = [
   },  
 ];
   
+// change quote every 9 seconds
+
+setInterval(printQuote, 9000);
+
 
 // Created a function to get a random quote from the array 'quotes'
 function getRandomQuote () {
@@ -94,6 +98,7 @@ function printQuote () {
   changeBackground();
   return htmlString; 
 }
+
 
 
 /***
